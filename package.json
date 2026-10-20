@@ -1,0 +1,20 @@
+{
+  "name": "magpie-agent-pig",
+  "version": "0.1.0",
+  "description": "Add PiG to Magpie and sync its models as a Magpie provider.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/zxunify/magpie-agent-pig#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zxunify/magpie-agent-pig.git"
+  },
+  "bugs": { "url": "https://github.com/zxunify/magpie-agent-pig/issues" },
+  "files": ["pig.agent.js", "README.md", "LICENSE"],
+  "keywords": ["magpie-plugin", "agent", "pig", "pi-in-go"],
+  "magpie": { "agent": "./pig.agent.js" },
+  "scripts": {
+    "test": "node --test pig.test.mjs",
+    "test:integration": "node test/integration.mjs"
+  }
+}
